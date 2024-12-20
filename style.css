@@ -1,0 +1,108 @@
+.cs-it-RedirectModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10000;
+}
+
+.cs-it-RedirectModal .cs-it-RedirectModal-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.95);
+}
+
+.cs-it-RedirectModal .cs-it-RedirectModal-content {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 90%;
+  max-width: 700px;
+  background-color: #ffd9b2;
+  transform: translate(-50%, -50%);
+}
+
+.cs-it-RedirectModal
+  .cs-it-RedirectModal-content.cs-it-RedirectModal-content--main {
+  display: block;
+}
+
+.cs-it-RedirectModal .cs-it-RedirectModal-title {
+  padding: 20px;
+  font-size: 0;
+  background-color: #4f2018;
+}
+
+.cs-it-RedirectModal .cs-it-RedirectModal-title p {
+  display: inline-block;
+  vertical-align: middle;
+  width: calc(100% - 31px);
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.cs-it-RedirectModal .cs-it-RedirectModal-title .cs-it-RedirectCloseButton {
+  display: inline-block;
+  vertical-align: middle;
+  width: 31px;
+}
+
+.cs-it-RedirectModal .cs-it-RedirectModal-list {
+  margin: 0 20px;
+  padding: 0;
+  font-size: 0;
+  text-align: center;
+}
+
+.cs-it-RedirectModal .cs-it-RedirectModal-list li {
+  display: inline-block;
+  vertical-align: top;
+  margin: 10px;
+}
+
+.cs-it-RedirectModal .cs-it-RedirectModal-list li a {
+  display: block;
+}
+
+.cs-it-RedirectModal .cs-it-RedirectModal-info {
+  margin: 10px 20px;
+  font-size: 12px;
+  color: #3e1710;
+}
+
+.cs-it-RedirectModal .cs-it-RedirectModal-text {
+  padding: 20px;
+  font-size: 16px;
+  line-height: 1.4em;
+  color: #3e1710;
+  overflow-y: auto;
+}
+
+.cs-it-RedirectModal .cs-it-RedirectModal-text p {
+  margin-bottom: 10px;
+}
+
+.cs-it-RedirectModal .cs-it-RedirectModal-text p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 800px) {
+  .cs-it-RedirectModal .cs-it-RedirectModal-title p {
+    font-size: 18px;
+  }
+
+  .cs-it-RedirectModal .cs-it-RedirectModal-text {
+    max-height: 480px;
+  }
+}
+
+@media (max-width: 400px) {
+  .cs-it-RedirectModal .cs-it-RedirectModal-title p {
+    font-size: 14px;
+  }
+}
